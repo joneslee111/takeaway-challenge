@@ -81,3 +81,71 @@ Notes on Test Coverage
 ------------------
 
 You can see your [test coverage](https://github.com/makersacademy/course/blob/master/pills/test_coverage.md) when you run your tests.
+
+Planning
+--------
+## User Story 1
+As a customer
+So that I can check if I want to order something
+I would like to see a list of dishes with prices
+
+Nouns: customer, order something, dishes w/ prices
+Verb: order, see, check
+
+OBJECTS  |  MESSAGES
+---------|-----------
+customer | 
+Menu     | see
+Takeaway | see_a_menu
+
+Class Name      |  Takeaway    |   Menu
+----------------------------------------------
+Attributes/data |  @menu       |   @dishes
+----------------------------------------------
+Methods         |  see_menu    |   see
+
+## User Story 2
+As a customer
+So that I can order the meal I want
+I would like to be able to select some number of several available dishes
+
+Nouns:  customer, available dishes
+Verb:  order, select
+
+OBJECTS  |  MESSAGES
+---------|-----------
+customer | 
+select   | available_dishes
+
+Class Name      |  Menu
+---------------------------------------
+Attributes/data |  @dishes : hash {}
+---------------------------------------
+Methods         |  initialize
+
+## User Story 3
+As a customer
+So that I can verify that my order is correct
+I would like to check that the total I have been given matches the sum of the various dishes in my order
+
+Nouns:  customer, correct, total
+Verb:   verify, matches
+
+OBJECTS  |  MESSAGES
+---------|-----------
+customer | 
+order    | dish_prices
+
+
+
+## User Story 4
+As a customer
+So that I am reassured that my order will be delivered on time
+I would like to receive a text such as "Thank you! Your order was placed and will be delivered before 18:52" after I have ordered
+
+Nouns:  customer, correct, total
+Verb:   reassured, delivered, recieve text
+OBJECTS  |  MESSAGES
+---------|-----------
+customer | 
+order    | 
